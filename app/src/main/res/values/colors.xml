@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="view_1dp_h">#D3D3D3</color>
+    <color name="appcolor">#465689</color>
+    <color name="activity_bg">#e9e9ed</color>
+    <color name="ordertext_false">#A7A7A7</color>
+    <color name="ordertext_true">#ffffff</color>
+    <color name="order">#23355d</color>
+    <color name="dontbindbank_text">#fc3d3d</color>
+    <color name="waitleave_quxiao">#969696</color>
+    <color name="choosepassenger_adapter_text">#7B7B7B</color>
+</resources>

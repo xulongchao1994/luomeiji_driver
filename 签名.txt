@@ -1,0 +1,10 @@
+证书指纹:
+         MD5: A3:CD:65:D7:37:77:78:94:14:A2:EF:4B:AB:3F:57:E1
+         SHA1: 01:D0:5F:40:D7:5F:FD:72:DD:BC:D2:C7:C1:D8:B7:FD:34:A8:21:AF
+         SHA256: 49:30:68:3E:71:93:8D:14:B0:29:3D:5E:48:DD:C2:54:7E:00:1C:F8:DC:56:DB:94:D1:39:D2:1A:02:D6:F5:F6
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+         luomeiji
+         luomeiji
+         luomeiji

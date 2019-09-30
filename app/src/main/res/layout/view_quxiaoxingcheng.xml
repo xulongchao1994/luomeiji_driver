@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/order_recycler_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="请选择取消原因"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/ordertext_false"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:text="计划行程有变"
+                android:textColor="@color/ordertext_false"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:text="计划行程有变"
+                android:textColor="@color/ordertext_false"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:text="计划行程有变"
+                android:textColor="@color/ordertext_false"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:text="计划行程有变"
+                android:textColor="@color/ordertext_false"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:text="计划行程有变"
+                android:textColor="@color/ordertext_false"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="违约规则"
+            android:textColor="#8D8C8C" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="您须支付违约金     ￥22"
+            android:textColor="#ff8d8c8c"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/view_quixao"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/citycar_quxiao"
+                android:text="返回该订单"
+                android:textColor="#8D8C8C" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_login"
+                android:text="提交并取消" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
