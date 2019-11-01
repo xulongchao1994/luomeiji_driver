@@ -28,14 +28,14 @@ class SetPswActivity : LBaseAppCompatActivity<SetPswPersenter>(), ISetPswView {
         editor!!.commit()
         UserData_Java.islogin = true
         UserData_Java.driveruserid = signUpBean.data.driverUserId
-//        when (type) {
-//            "1" -> {
-//                startActivity(Intent(this, CarOwnerActivity::class.java))
-//            }
-//            "2" -> {
-//                finish()
-//            }
-//        }
+        when (type) {
+            "1" -> {
+                startActivity(Intent(this, CarOwnerActivity::class.java))
+            }
+            "2" -> {
+                finish()
+            }
+        }
     }
 
     override fun signuperror(string: String) {

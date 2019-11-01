@@ -3,6 +3,9 @@ package com.android.luomeiji_driver.UI.signup
 import android.content.Context
 import android.util.Log
 import com.android.luomeiji_driver.Base.LBasePersenter
+import com.android.luomeiji_driver.Tools.GsonUtils
+import com.android.luomeiji_driver.Tools.Utils
+import com.android.luomeiji_driver.bean.LoginBean
 import com.android.luomeiji_driver.network.*
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -14,7 +17,12 @@ class SignUpPersenter(mView: ISignUpView, context: Context) :
     fun getcode(phonenumber: String) {
         ApiData.getcode(phonenumber, OnSuccessAndFaultSub(object : OnSuccessAndFaultListener {
             override fun onSuccess(result: String?) {
-                mView.getcodesuccess(result!!)
+                if (Utils.strinjson(result, "code") == "1") {
+                    var data = Utils.strinjson(result, "data")
+                    mView.getcodesuccess(data)
+                } else {
+                    mView.getcodeerror(Utils.strinjson(result, "message"))
+                }
             }
 
             override fun onFault(errorMsg: String?) {

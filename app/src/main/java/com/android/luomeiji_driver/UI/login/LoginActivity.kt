@@ -61,10 +61,10 @@ class LoginActivity : LBaseAppCompatActivity<LoginPersenter>(), ILoginView {
         sp = getSharedPreferences("USERINFO", Context.MODE_PRIVATE)
         editor = sp!!.edit()
         login_singin.setOnClickListener {
-            startActivity(Intent(this, SignupActivity::class.java).putExtra("type", 1))
+            startActivity(Intent(this, SignupActivity::class.java).putExtra("type", "1"))
         }
         login_forgetpsw.setOnClickListener {
-            startActivity(Intent(this, SignupActivity::class.java).putExtra("type", 2))
+            startActivity(Intent(this, SignupActivity::class.java).putExtra("type", "2"))
         }
         login_login_bt.setOnClickListener {
             var name = login_name_et.text.toString()

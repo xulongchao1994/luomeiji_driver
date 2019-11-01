@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.android.luomeiji_driver">
     <!--允许程序打开网络套接字-->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -21,14 +22,19 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="952a9ba952b42411e9e2ede13b820b41" />
 
         <activity android:name=".UI.welcome.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".UI.main.MainActivity">
 
@@ -82,33 +88,22 @@
 
         </activity>
         <!--绑定银行卡-->
-        <activity android:name=".UI.bindbank.BindBankActivity">
-
-        </activity>
+        <activity android:name=".UI.bindbank.BindBankActivity"></activity>
         <!--提现-->
-        <activity android:name=".UI.withdraw.WithdrawActivity">
-
-        </activity>
-        <activity android:name=".UI.citycar.CityCarActivity">
-
-        </activity>
+        <activity android:name=".UI.withdraw.WithdrawActivity"></activity>
+        <activity android:name=".UI.citycar.CityCarActivity"></activity>
         <!--等待出发-->
-        <activity android:name=".UI.waitleave.WaitLeaveActivity">
-
-        </activity>
-        <activity android:name=".UI.choosepassenger.ChoosePassengerActivity">
+        <activity android:name=".UI.waitleave.WaitLeaveActivity"></activity>
+        <activity android:name=".UI.choosepassenger.ChoosePassengerActivity"></activity>
+        <!--等待乘客上车-->
+        <activity android:name=".UI.withpassenger.WithPassengerActivity">
 
         </activity>
         <activity android:name="com.yalantis.ucrop.UCropActivity" />
         <!--网约出租车-->
         <activity android:name=".UI.taxiorders.TaxiOrdersActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
 
         </activity>
+        <service android:name="com.amap.api.location.APSService"></service>
     </application>
 </manifest>

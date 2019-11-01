@@ -25,7 +25,7 @@ class ApiFactify private constructor() {
     companion object {
 
         @JvmField
-        val HOST = "http://47.92.209.238:6001"
+        val HOST = "http://47.92.209.238:6001/"
         internal var mService: Api? = null
         internal var mOkHttpClient: OkHttpClient? = null
 
