@@ -145,4 +145,25 @@ interface Api {
     @FormUrlEncoded
     @POST("driverUser/isDriverUserReview")
     fun getlegalize(@Field("driverUserId") driverUserId: String): Observable<ResponseBody>
+
+    /**
+     * 司机发送位置
+     */
+    @FormUrlEncoded
+    @POST("driverOrder/setLocation")
+    fun postdriverlocation(
+        @Field("driverOrderId") driverOrderId: String,
+        @Field("driverUserLot") driverUserLot: String,
+        @Field("driverUserLat") driverUserLat: String,
+        @Field("userId") userId: String
+    ): Observable<ResponseBody>
+
+    /**
+     * 司机发车
+     * driverOrderId  订单id
+     * code  代状态    2001 已发车 2002司机已送达  2003已送达
+     */
+    @FormUrlEncoded
+    @POST("driverOrder/updateState")
+    fun fache(@Field("driverOrderId") driverOrderId: String, @Field("code") code: String): Observable<ResponseBody>
 }

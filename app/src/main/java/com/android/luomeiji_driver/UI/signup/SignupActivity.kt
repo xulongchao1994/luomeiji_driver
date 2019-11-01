@@ -46,7 +46,7 @@ class SignupActivity : LBaseAppCompatActivity<SignUpPersenter>(), ISignUpView,
                 var intent = Intent(this, SetPswActivity::class.java)
                 intent.putExtra("phonenumber", sigeup_phonenumber_et.text.toString())
                 intent.putExtra("phonecode", login_code_et.text.toString())
-                intent.putExtra("type", type == "1")
+                intent.putExtra("type", type)
                 startActivity(intent)
             }
         }

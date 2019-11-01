@@ -10,7 +10,7 @@ interface ITaxiOrders : LBaseView {
     fun taxiorderqiangerror(string: String)
 
     //司机抢单
-    fun taxiorderdriversuccess(string: String)
+    fun taxiorderdriversuccess(string: String,orderid:String,userId:String)
 
     fun taxiorderdrivererror(string: String)
 }
