@@ -103,4 +103,20 @@ object ApiData {
         var observable = ApiFactify.getInstance()!!.getlegalize(driverid)
         ApiFactify.fromSubscribe(observable, subscriber)
     }
+
+    /**
+     *司机发送位置
+     */
+    fun postdriverlocation(driverOrderId: String, driverUserLot: String, driverUserLat: String, userId: String, subscriber: DisposableObserver<ResponseBody>) {
+        var observable = ApiFactify.getInstance()!!.postdriverlocation(driverOrderId, driverUserLot, driverUserLat, userId)
+        ApiFactify.fromSubscribe(observable, subscriber)
+    }
+
+    /**
+     *司机发送位置
+     */
+    fun fache(driverOrderId: String, code: String, subscriber: DisposableObserver<ResponseBody>) {
+        var observable = ApiFactify.getInstance()!!.fache(driverOrderId, code)
+        ApiFactify.fromSubscribe(observable, subscriber)
+    }
 }
