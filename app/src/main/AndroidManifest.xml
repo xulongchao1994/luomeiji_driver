@@ -29,81 +29,116 @@
             android:name="com.amap.api.v2.apikey"
             android:value="952a9ba952b42411e9e2ede13b820b41" />
 
-        <activity android:name=".UI.welcome.WelcomeActivity">
+        <activity
+            android:name=".UI.welcome.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_app">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.main.MainActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--登录-->
-        <activity android:name=".UI.login.LoginActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--注册-->
-        <activity android:name=".UI.signup.SignupActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.signup.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--修改密码-->
-        <activity android:name=".UI.password.SetPswActivity">
+        <activity
+            android:name=".UI.password.SetPswActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
 
-        </activity>
-
-        <activity android:name=".UI.carowner.CarOwnerActivity">
-
-        </activity>
-        <activity android:name=".UI.carowner.CarOwnerTwoActivity">
-
-
-        </activity>
-        <activity android:name=".UI.legalize.CarLegalizeActivity">
-
-        </activity>
-        <activity android:name=".UI.legalize.CarLegalize_TwoActivity">
-
-
-        </activity>
-        <activity android:name=".UI.legalizeresult.LegalizeresultwithActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.carowner.CarOwnerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.carowner.CarOwnerTwoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.legalize.CarLegalizeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.legalize.CarLegalize_TwoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.legalizeresult.LegalizeresultwithActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--个人中心-->
-        <activity android:name=".UI.mend.MendActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.mend.MendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--订单页面-->
-        <activity android:name=".UI.order.OrderActivity">
-
-        </activity>
-        <activity android:name=".UI.passenger.PassengerActivity">
-
-        </activity>
-        <activity android:name=".UI.setting.SettingActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.order.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.passenger.PassengerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--未绑定银行卡-->
-        <activity android:name=".UI.bindbank.DontBindBankActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.bindbank.DontBindBankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--绑定银行卡-->
-        <activity android:name=".UI.bindbank.BindBankActivity"></activity>
+        <activity
+            android:name=".UI.bindbank.BindBankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--提现-->
-        <activity android:name=".UI.withdraw.WithdrawActivity"></activity>
-        <activity android:name=".UI.citycar.CityCarActivity"></activity>
+        <activity
+            android:name=".UI.withdraw.WithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.citycar.CityCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--等待出发-->
-        <activity android:name=".UI.waitleave.WaitLeaveActivity"></activity>
-        <activity android:name=".UI.choosepassenger.ChoosePassengerActivity"></activity>
+        <activity
+            android:name=".UI.waitleave.WaitLeaveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name=".UI.choosepassenger.ChoosePassengerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--等待乘客上车-->
-        <activity android:name=".UI.withpassenger.WithPassengerActivity">
-
-        </activity>
-        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+        <activity
+            android:name=".UI.withpassenger.WithPassengerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <!--网约出租车-->
-        <activity android:name=".UI.taxiorders.TaxiOrdersActivity">
-
-        </activity>
+        <activity
+            android:name=".UI.taxiorders.TaxiOrdersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity"></activity>
         <service android:name="com.amap.api.location.APSService"></service>
     </application>
 </manifest>

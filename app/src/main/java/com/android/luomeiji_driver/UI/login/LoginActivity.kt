@@ -3,20 +3,16 @@ package com.android.luomeiji_driver.UI.login
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.android.luomeiji_driver.Base.LBaseAppCompatActivity
 import com.android.luomeiji_driver.R
 import com.android.luomeiji_driver.Tools.MyToast
 import com.android.luomeiji_driver.UI.carowner.CarOwnerActivity
 import com.android.luomeiji_driver.UI.main.MainActivity
-import com.android.luomeiji_driver.UI.password.SetPswActivity
 import com.android.luomeiji_driver.UI.signup.SignupActivity
 import com.android.luomeiji_driver.bean.LoginBean
 import com.android.luomeiji_driver.data.UserData_Java
 import com.vondear.rxtool.RxKeyboardTool
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_setpsw.*
 
 class LoginActivity : LBaseAppCompatActivity<LoginPersenter>(), ILoginView {
     override fun loginsuccess(string: LoginBean) {
