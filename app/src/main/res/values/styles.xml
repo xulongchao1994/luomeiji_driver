@@ -21,6 +21,16 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
+    <style name="start_activity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/activity_bg</item>
+    </style>
+    <style name="start_app" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowBackground">@drawable/luomeiji_icon</item>
+    </style>
+
 
     <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
         <!-- 定义星星图片 -->
