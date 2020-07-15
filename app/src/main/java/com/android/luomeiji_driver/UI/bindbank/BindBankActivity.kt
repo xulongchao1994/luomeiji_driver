@@ -3,6 +3,9 @@ package com.android.luomeiji_driver.UI.bindbank
 import com.android.luomeiji_driver.Base.LBaseAppCompatActivity
 import com.android.luomeiji_driver.R
 
+/**
+ * 绑定银行卡页面
+ */
 class BindBankActivity : LBaseAppCompatActivity<BindBankPersenter>(), IBindBankView {
     override fun initlayout(): Int {
         return R.layout.activity_bindbank

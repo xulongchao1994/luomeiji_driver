@@ -3,6 +3,7 @@ package com.android.luomeiji_driver.UI.login
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.view.View
 import com.android.luomeiji_driver.Base.LBaseAppCompatActivity
 import com.android.luomeiji_driver.R
 import com.android.luomeiji_driver.Tools.MyToast
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : LBaseAppCompatActivity<LoginPersenter>(), ILoginView {
     override fun loginsuccess(string: LoginBean) {
-        RxKeyboardTool.hideKeyboard(this, login_name_et)
+        RxKeyboardTool.hideKeyboard(this, login_name_et )
         RxKeyboardTool.hideKeyboard(this, login_psw_et)
         editor!!.putBoolean("islogin", true)
         editor!!.putString("username", login_name_et.text.toString())
